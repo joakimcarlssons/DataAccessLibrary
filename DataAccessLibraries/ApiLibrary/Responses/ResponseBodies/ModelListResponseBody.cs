@@ -19,6 +19,6 @@ namespace ApiLibrary.Responses.ResponseBodies
         /// <summary>
         /// The list of models to be returned
         /// </summary>
-        public IEnumerable<T> ModelList { get; set; }
+        public IEnumerable<T> Data { get; set; }
     }
 }

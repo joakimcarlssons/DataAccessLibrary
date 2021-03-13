@@ -18,14 +18,14 @@ namespace ApiLibrary.Responses
         /// Initializes a new instance of the <see cref="ModelListResponseBody{T}"/> class
         /// </summary>
         /// <param name="message">The message</param>
-        /// <param name="modelList">The list of models</param>
-        public ModelListResponse(string message, IEnumerable<T> modelList)
+        /// <param name="models">The list of models</param>
+        public ModelListResponse(string message, IEnumerable<T> models)
         {
             // Create response
             Response = new ModelListResponseBody<T>
             {
                 Message     = message,
-                ModelList   = modelList
+                Data        = models
             };
         }
 

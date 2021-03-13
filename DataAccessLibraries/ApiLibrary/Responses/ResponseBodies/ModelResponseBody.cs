@@ -19,6 +19,6 @@ namespace ApiLibrary.Responses.ResponseBodies
         /// <summary>
         /// The model the return
         /// </summary>
-        public T Model { get; set; }
+        public T Data { get; set; }
     }
 }

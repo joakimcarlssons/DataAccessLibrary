@@ -22,14 +22,14 @@ namespace ApiLibrary.Responses
         /// Initializes a new instance of the <see cref="ModelResponseBody{T}"/> class
         /// </summary>
         /// <param name="message">The message</param>
-        /// <param name="model">The model</param>
+        /// <param name="data">The model</param>
         public ModelResponse(string message, T model)
         {
             // Create response
             Response = new ModelResponseBody<T>
             {
                 Message = message,
-                Model   = model
+                Data   = model
             };
         }
     }

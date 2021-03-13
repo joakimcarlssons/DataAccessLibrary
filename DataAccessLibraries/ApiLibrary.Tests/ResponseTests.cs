@@ -52,7 +52,7 @@ namespace ApiLibrary.Tests
 
             // Check the result
             Assert.That(response.Response.Message, Is.EqualTo("User created"));
-            Assert.That(response.Response.Model, Is.EqualTo(model));
+            Assert.That(response.Response.Data, Is.EqualTo(model));
         }
 
         /// <summary>
@@ -79,7 +79,7 @@ namespace ApiLibrary.Tests
 
             // Check the result
             Assert.That(response.Response.Message, Is.EqualTo("Users created"));
-            Assert.That(response.Response.ModelList, Is.EqualTo(modelList));
+            Assert.That(response.Response.Data, Is.EqualTo(modelList));
         }
     }
 }

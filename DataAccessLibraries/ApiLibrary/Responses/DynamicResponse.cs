@@ -18,6 +18,6 @@ namespace ApiLibrary.Responses
         /// Default constructor. Setting the dynamic response.
         /// </summary>
         /// <param name="responseBody"></param>
-        public DynamicResponse(dynamic responseBody) => ResponseBody = responseBody;
+        public DynamicResponse(dynamic data) => ResponseBody = data;
     }
 }
