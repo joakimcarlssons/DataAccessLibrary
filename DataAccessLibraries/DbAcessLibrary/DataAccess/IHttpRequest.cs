@@ -2,7 +2,7 @@
 
 namespace DataAccessLibrary.DataAccess
 {
-    public interface IHttpRequests
+    public interface IHttpRequest
     {
         Task<T> GetJsonAsync<T>(string url);
     }

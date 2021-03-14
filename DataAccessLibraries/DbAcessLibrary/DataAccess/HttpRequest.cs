@@ -10,7 +10,7 @@ namespace DataAccessLibrary.DataAccess
     /// <summary>
     /// Make Http requests using these generic functions
     /// </summary>
-    public class HttpRequests : IHttpRequests
+    public class HttpRequest : IHttpRequest
     {
         #region Private Members
 
@@ -24,7 +24,7 @@ namespace DataAccessLibrary.DataAccess
         /// <summary>
         /// Default constructor
         /// </summary>
-        public HttpRequests(IHttpClientFactory clientFactory)
+        public HttpRequest(IHttpClientFactory clientFactory)
         {
             // Injections
             _clientFactory = clientFactory;
