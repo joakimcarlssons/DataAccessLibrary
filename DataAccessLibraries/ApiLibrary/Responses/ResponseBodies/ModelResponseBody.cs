@@ -9,7 +9,6 @@ namespace ApiLibrary.Responses.ResponseBodies
     /// </summary>
     /// <typeparam name="T">The type of the model to create a response for</typeparam>
     public class ModelResponseBody<T>
-        where T : class
     {
         /// <summary>
         /// The message to return

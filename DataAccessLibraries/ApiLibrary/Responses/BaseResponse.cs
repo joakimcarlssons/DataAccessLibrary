@@ -9,7 +9,7 @@ namespace ApiLibrary.Responses
     /// The response to return when a model should be returned
     /// </summary>
     /// <typeparam name="T">The type of the model to return</typeparam>
-    public class ModelResponse<T>
+    public class BaseResponse<T>
         where T : class
     {
         /// <summary>
@@ -19,17 +19,17 @@ namespace ApiLibrary.Responses
 
         /// <summary>
         /// Default constructor.
-        /// Initializes a new instance of the <see cref="ModelResponseBody{T}"/> class
+        /// Initializes a new instance of the <see cref="BaseResponse{T}{T}"/> class
         /// </summary>
         /// <param name="message">The message</param>
         /// <param name="data">The model</param>
-        public ModelResponse(string message, T model)
+        public BaseResponse(string message, T model)
         {
             // Create response
             Response = new ModelResponseBody<T>
             {
                 Message = message,
-                Data   = model
+                Data = model
             };
         }
     }
